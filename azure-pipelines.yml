@@ -13,7 +13,7 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- script: dotnet publish --configuration $(buildConfiguration) -o $(build.artifactstagingdirectory)
+- script: dotnet publish --configuration $(buildConfiguration) -o $(build.artifactstagingdirectory) ./azure_learn/execute-azure-function-with-triggers
   displayName: 'dotnet publish $(buildConfiguration)'
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact'
