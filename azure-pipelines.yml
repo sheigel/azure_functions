@@ -20,4 +20,5 @@ steps:
   inputs:
     PathtoPublish: '$(build.artifactstagingdirectory)'
     ArtifactName: '$(Parameters.ArtifactName)'
+    publishLocation: Container
   condition: succeededOrFailed()
