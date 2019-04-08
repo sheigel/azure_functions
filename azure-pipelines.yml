@@ -13,5 +13,5 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- script: dotnet build --configuration $(buildConfiguration) ./execute-azure-function-with-triggers
+- script: dotnet build --configuration $(buildConfiguration) ./azure_learn/execute-azure-function-with-triggers
   displayName: 'dotnet build $(buildConfiguration)'
